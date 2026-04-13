@@ -19,7 +19,7 @@ export const AccordionRootStyled = styled.div<AccordionOwnerState>(
       borderRadius: shape?.borderRadius || '4px',
       backgroundColor: palette?.background?.paper || '#fff',
       border: `1px solid ${palette?.divider || 'rgba(0, 0, 0, 0.12)'}`,
-      margin: ownerExpanded ? '16px 0' : '0',
+      margin: '0',
       '&:first-of-type': {
         marginTop: 0,
         borderTopLeftRadius: shape?.borderRadius || '4px',
@@ -49,7 +49,7 @@ export const AccordionSummaryRootStyled = styled.button<AccordionOwnerState>(
       justifyContent: 'space-between',
       margin: 0,
       width: '100%',
-      minHeight: ownerExpanded ? '64px' : '48px',
+      minHeight: '48px',
       padding: '0 16px',
       transition:
         'min-height 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms',
